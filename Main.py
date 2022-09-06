@@ -1,15 +1,10 @@
 from typing import Optional
 
- 
-
 class Node:
-
- 
 
     def __init__(self, data=None, next=None):
 
         """
-
         Initialises the Node with given attributes
 
         """
@@ -18,13 +13,7 @@ class Node:
 
         self.next = next
 
- 
-
- 
-
 class LinkedList:
-
- 
 
     def __init__(self):
 
@@ -35,8 +24,6 @@ class LinkedList:
         """
 
         self.head = None
-
- 
 
     def insert_at_end(self, data):
 
@@ -57,7 +44,6 @@ class LinkedList:
             current.next = new
 
  
-
     def status(self):
 
         elements = []
@@ -72,13 +58,8 @@ class LinkedList:
 
         print(elements)
 
- 
-
- 
 
 class Solution:
-
- 
 
     def addTwoNumbers(self, first_list: Optional[LinkedList], second_list: Optional[LinkedList]) -> Optional[LinkedList]:
 
@@ -91,8 +72,6 @@ class Solution:
             sum_list.insert_at_end(digit)
 
         return sum_list
-
- 
 
     def get_num(self, l: Optional[LinkedList]) -> int:
 
